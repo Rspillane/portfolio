@@ -2,14 +2,14 @@
 const projects = [
     {
         id: 1,
-        title: 'Project-1',
+        title: 'MGBb',
         img: 'image-placeholder',
         description: 'short description of the project',
         projectTags: ['HTML', 'CSS', 'JavaScript']
     },
     {
         id: 2,
-        title: 'Project-2',
+        title: 'Stickr',
         img: 'image-placeholder',
         description: 'short description of the project',
         projectTags: ['HTML', 'CSS', 'JavaScript']
@@ -31,12 +31,15 @@ const createCard = (project) => {
     let card = document.createElement('div');
     card.classList.add(`portfolio-card-${project.id}`);
 
-    let contents = `<div class="portfolio-card">
+    let contents = `
+    <a href="">
+    <div class="portfolio-card">
     <h3 class="portfolio-title">${project.title}</h3>
     <div class="portfolio-image">${project.img}</div>
     <p class="portfolio-descr">${project.description}</p>
     <div class="portfolio-tags">${project.projectTags[0]},${project.projectTags[1]}</div>
-    </div> `;
+    </div> 
+    </a>`;
     card.innerHTML = contents;
     cardContainer.append(card);
 }
