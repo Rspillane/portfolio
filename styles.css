@@ -78,10 +78,13 @@ h1, h2 {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .portfolio-card {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px 20px 20px 20px;
+    width: 200px;
 }

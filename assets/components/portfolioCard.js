@@ -1,10 +1,5 @@
-{/* <div class="portfolio-card">
-<h3 class="portfolio-title">Project Title</h3>
-<div class="portfolio-image">image placeholder</div>
-<p class="portfolio-descr">short description</p>
-<div class="portfolio-tags">Tech tags</div>
-</div> */}
-const project = [
+// Variable defined
+const projects = [
     {
         id: 1,
         title: 'Project-1',
@@ -28,9 +23,10 @@ const project = [
     }
 ]
 
-
 let cardContainer = document.getElementsByClassName('portfolio-cards')[0];
 
+
+// Functions
 const createCard = (project) => {
     let card = document.createElement('div');
     card.classList.add(`portfolio-card-${project.id}`);
@@ -39,8 +35,20 @@ const createCard = (project) => {
     <h3 class="portfolio-title">${project.title}</h3>
     <div class="portfolio-image">${project.img}</div>
     <p class="portfolio-descr">${project.description}</p>
-    <div class="portfolio-tags">${project.img[0]},${project.img[1]}</div>
+    <div class="portfolio-tags">${project.projectTags[0]},${project.projectTags[1]}</div>
     </div> `;
     card.innerHTML = contents;
     cardContainer.append(card);
 }
+
+for (i=0; projects.length; i++) {
+    createCard(projects[i]);
+}
+
+// Functions Called
+// const mapProjects = projects.map(project => {
+//     createCard(project);
+// }
+// )
+
+// console.log(mapProjects());
