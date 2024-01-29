@@ -18,7 +18,21 @@ h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     margin-top: 0;
+    margin-bottom: 5px;
 }
+
+.button{
+    background-color: black;
+
+    font-size: 12px;
+    color: white;
+
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Navbar Styles */
 .nav {
     display: flex;
@@ -60,19 +74,6 @@ h3 {
     transform: rotate(-2deg);
 
     cursor: pointer;
-
-}
-
-.cta-button {
-    background-color: black;
-
-    font-size: 12px;
-    color: white;
-
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-
 }
 
 /* Portfolio Section */
@@ -93,8 +94,29 @@ h3 {
 }
 
 .portfolio-card {
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    width: 200px;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .5s;
 }
+.portfolio-image img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card:hover{
+    scale: 1.02;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
+    /* padding-inline: 50px; */
+    transition: all .5s;
+}
+
+.card-link {
+    z-index: 2;
+    margin-top: 10px;
+}
+
