@@ -1,6 +1,8 @@
 /* Global Styles */
 * {
     font-family: 'Roboto', sans-serif;
+
+    padding: 0;
 }
 
 button {
@@ -83,7 +85,7 @@ h3 {
 
 .hero-info {
     flex-grow: 1;
-    padding-left: 150px;
+    padding-left: 120px;
     max-width: 400px;
 }
 
@@ -158,7 +160,7 @@ h3 {
     /* border: 1px solid; */
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
-    width: auto;
+    width: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .5s;
 }
@@ -183,6 +185,7 @@ h3 {
 
 .portfolio-tags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-tag {
@@ -228,6 +231,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .contact-content {
@@ -278,3 +282,44 @@ h3 {
 .form-button {
     width: 200px;
 }
+
+/* Footer */
+footer{
+    padding: 30px;
+    background-color: black;
+    margin: -10px;
+    color: white;
+
+    display: flex;
+    height: auto;
+    column-gap: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-nav-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.footer-nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 5px;
+}
+
+.footer-contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.footer-contact-links{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 5px;
+}
+
+/* media queries here to only display icons with links */
