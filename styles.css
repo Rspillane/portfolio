@@ -74,7 +74,7 @@ h3 {
 }
 
 /* Hero Section */
-.hero {
+#hero {
     height: 500px;
 
     display: flex;
@@ -136,7 +136,7 @@ h3 {
 }
 
 /* Portfolio Section */
-.portfolio {
+#portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,19 @@ h3 {
     margin-top: 10px;
 }
 
+.portfolio-tags {
+    display: flex;
+}
+
+.portfolio-tag {
+    border: solid;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 4px 10px 4px 10px;
+}
+
 /* Skills */
 .skills{
     display: flex;
@@ -211,7 +224,7 @@ h3 {
 
 /* contact */
 
-.contact{
+#contact{
     display: flex;
     flex-direction: column;
     align-items: center;
