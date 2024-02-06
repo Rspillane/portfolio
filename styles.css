@@ -156,27 +156,26 @@ h3 {
     max-width: 400px;
 }
 
-.bio-tags {
+.bio-tags-container {
     padding-right: 100px;
     padding-left: 50px;
     flex-wrap: wrap;
 
 }
 
-.bio-tag {
-    border: solid rgb(195, 195, 195) 1px;
-    border-radius: 4px;
-
-    padding: 4px;
-
-    font-size: 12px;
-    font-weight: bolder;
-
+.bio-tags {
     display: flex;
     flex-wrap: wrap;
+}
 
-
-    transition: all 0.5s;
+.bio-tag {
+    border: solid rgb(202, 202, 202) 1px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 4px 10px 4px 10px;
+    transition: all 0.25s;
 }
 
 .bio-tag:hover {
@@ -185,6 +184,7 @@ h3 {
     color: white;
     background-color: black;
     border:solid black 1px;
+    transition: all 0.25s;
 }
 
 /* Portfolio Section */
