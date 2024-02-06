@@ -95,7 +95,7 @@ const createCard = (project) => {
     <p class="portfolio-descr">${project.description}</p>
     <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`)}</div>
     <a href="${project.githubLink}" class="button card-link"><p>Github</p></a>
-    <a href="${project.demoLink} class="button card-link"><p>Live Demo</p></a>
+    <a href="${project.demoLink}" class="button card-link"><p>Live Demo</p></a>
     </div> 
     `;
     card.innerHTML = contents;
