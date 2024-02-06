@@ -87,7 +87,7 @@ const createCard = (project) => {
     card.classList.add(`portfolio-card-${project.id}`);
 
     let contents = `
-    <div class="portfolio-card">
+    <article class="portfolio-card">
     <h3 class="portfolio-title">${project.title}</h3>
     <div class="portfolio-image">
         <img src="${project.img}"/>
@@ -96,7 +96,7 @@ const createCard = (project) => {
     <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`)}</div>
     <a href="${project.githubLink}" class="button card-link"><p>Github</p></a>
     <a href="${project.demoLink}" class="button card-link"><p>Live Demo</p></a>
-    </div> 
+    </article> 
     `;
     card.innerHTML = contents;
     cardContainer.append(card);

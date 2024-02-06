@@ -153,26 +153,28 @@ h3 {
     padding-left: 100px;
     padding-right: 50px;
     font-weight: 200;
+    max-width: 400px;
 }
 
 .bio-tags {
     padding-right: 100px;
     padding-left: 50px;
-    display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
-    font-weight: bolder;
+
 }
 
 .bio-tag {
     border: solid rgb(195, 195, 195) 1px;
-    padding-inline: 10px;
-    padding-block: 2px;
     border-radius: 4px;
 
+    padding: 4px;
+
+    font-size: 12px;
+    font-weight: bolder;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+
 
     transition: all 0.5s;
 }
@@ -211,6 +213,7 @@ h3 {
     width: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .5s;
+    
 }
 .portfolio-image img{
     width: 250px;
