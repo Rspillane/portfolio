@@ -51,6 +51,8 @@ h3 {
     border-radius: 6px;
     display: flex;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .button:active {
@@ -119,9 +121,9 @@ h3 {
 }
 
 #hero-image-2{
-    margin: -110px 0 0 -180px;
+    margin: -60px 0 0 -160px;
 
-    rotate: -5deg;
+    rotate: -10deg;
 }
 
 #hero-image-3{
@@ -145,15 +147,16 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .bio-text{
     display: flex;
-    flex-grow: 1;
     padding-left: 100px;
     padding-right: 50px;
     font-weight: 200;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 700px;
 }
 
 .bio-tags-container {
@@ -166,16 +169,19 @@ h3 {
 .bio-tags {
     display: flex;
     flex-wrap: wrap;
+    min-width: 250px;
+    max-width: 500px;
 }
 
 .bio-tag {
     border: solid rgb(202, 202, 202) 1px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: white;
     color: black;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 4px 10px 4px 10px;
     transition: all 0.25s;
+    margin: 4px;
 }
 
 .bio-tag:hover {
