@@ -60,6 +60,7 @@ h3 {
 }
 
 
+
 /* Navbar Styles */
 .nav {
     display: flex;
@@ -228,7 +229,7 @@ h3 {
 }
 
 .portfolio-card:hover{
-    scale: 1.02;
+    scale: 1.01;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
     /* padding-inline: 50px; */
@@ -243,15 +244,32 @@ h3 {
 .portfolio-tags {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 2px;
 }
 
 .portfolio-tag {
-    border: solid;
+    border: solid 1px;
     font-size: 10px;
-    background-color: black;
-    color: white;
     border-radius: 20px;
     padding: 4px 10px 4px 10px;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.portfolio-descr {
+    font-weight: 200;
+}
+
+.empty-button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: solid rgb(70, 70, 70) 1px;
 }
 
 /* Skills */
