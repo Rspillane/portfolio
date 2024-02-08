@@ -214,10 +214,12 @@ h3 {
 }
 
 .portfolio-card {
-    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     width: 250px;
+    height: 330px;;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .5s;
     
@@ -229,8 +231,8 @@ h3 {
 }
 
 .portfolio-card:hover{
-    scale: 1.01;
-    padding: 20px;
+    scale: 1.05;
+    margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
     /* padding-inline: 50px; */
     transition: all .5s;
@@ -271,6 +273,9 @@ h3 {
 
 .portfolio-descr {
     font-weight: 200;
+    flex-grow: 1;
+
+    margin-top: 0;
 }
 
 .empty-button {
