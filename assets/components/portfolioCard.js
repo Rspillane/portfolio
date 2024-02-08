@@ -78,7 +78,7 @@ const projects = [
     
 ]
 
-let cardContainer = document.getElementsByClassName('portfolio-cards')[0];
+let cardsContainer = document.getElementsByClassName('portfolio-cards')[0];
 
 
 // Functions
@@ -90,13 +90,13 @@ const createCard = (project) => {
     <article class="portfolio-card">
     <p class="portfolio-title">${project.title}</p>
     <p class="portfolio-descr">${project.description}</p>
-    <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`)}</div>
+    <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`).join('')}</div>
     <a href="${project.githubLink}" class="button card-link"><p>Github</p></a>
     <a href="${project.demoLink}" class="button empty-button card-link"><p>Live Demo</p></a>
     </article> 
     `;
     card.innerHTML = contents;
-    cardContainer.append(card);
+    cardsContainer.append(card);
 }
 
 for (i=0; projects.length; i++) {
