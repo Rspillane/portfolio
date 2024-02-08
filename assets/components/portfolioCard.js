@@ -44,7 +44,7 @@ const projects = [
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/forest-brewing-company',
         liveDemo: true,
-        demoLink: '',
+        demoLink: 'https://rspillane.github.io/forest-brewing-company/',
     },
     {
         id: 4,
@@ -90,6 +90,8 @@ const createCard = (project) => {
     <article class="portfolio-card">
     <p class="portfolio-title">${project.title}</p>
     <p class="portfolio-descr">${project.description}</p>
+    <button class="portfolio-expand">more</button>
+    <div class="portfolio-gap"></div>
     <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`).join('')}</div>
     <a href="${project.githubLink}" class="button card-link"><p>Github</p></a>
     <a href="${project.demoLink}" class="button empty-button card-link"><p>Live Demo</p></a>
