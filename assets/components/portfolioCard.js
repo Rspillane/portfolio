@@ -11,7 +11,7 @@ const projects = [
         projectTags: ['React', 'Next.js','HTML', 'CSS', 'JavaScript'],
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/MGDB',
-        liveDemo: true,
+        liveDemo: false,
         demoLink: '',
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         projectTags: ['React', 'Next.js','HTML', 'CSS', 'JavaScript'],
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/stickr',
-        liveDemo: true,
+        liveDemo: false,
         demoLink: '',
     },
     {
@@ -56,7 +56,7 @@ const projects = [
         projectTags: ['C#'],
         liveCode: true,
         githubLink: '',
-        liveDemo: true,
+        liveDemo: false,
         demoLink: '',
     },
     {
@@ -80,6 +80,10 @@ const projects = [
 
 let cardsContainer = document.getElementsByClassName('portfolio-cards')[0];
 
+const displayMore = () => {
+    let expandButton = document.getElementsByClassName('portfolio-expand')[0];
+
+}
 
 // Functions
 const createCard = (project) => {
@@ -90,11 +94,12 @@ const createCard = (project) => {
     <article class="portfolio-card">
     <p class="portfolio-title">${project.title}</p>
     <p class="portfolio-descr">${project.description}</p>
-    <button class="portfolio-expand">more</button>
-    <div class="portfolio-gap"></div>
+    <p class="portfolio-more">${project.more}</p>` +
+    // <button class="portfolio-expand">more</button>
+    `<div class="portfolio-gap"></div>
     <div class="portfolio-tags">${project.projectTags.map(tag => `<div class="portfolio-tag"><span>${tag}</span></div>`).join('')}</div>
     <a href="${project.githubLink}" class="button card-link"><p>Github</p></a>
-    <a href="${project.demoLink}" class="button empty-button card-link"><p>Live Demo</p></a>
+    <a href="${project.demoLink}" class="button empty-button card-link"><p>${project.liveDemo ? 'Demo' : 'Demo Unavailable'}</p></a>
     </article> 
     `;
     card.innerHTML = contents;

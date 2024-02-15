@@ -92,7 +92,7 @@ h3 {
     display: flex;
     flex-direction: column;
     padding-left: 100px;
-    min-width: 200px;
+    min-width: 350px;
     max-width: 40%;
     font-weight: 200;
 }
@@ -222,7 +222,7 @@ h3 {
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     width: 250px;
-    height: 400px;;
+    height: 320px;;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .5s;
     
@@ -234,8 +234,8 @@ h3 {
 }
 
 .portfolio-card:hover{
-    scale: 1.02;
-    margin: 10px;
+    scale: 1.01;
+    margin: 5px;
     box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
     /* padding-inline: 50px; */
     transition: all .5s;
@@ -280,6 +280,10 @@ h3 {
 
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.portfolio-more {
+    display: none;
 }
 
 .portfolio-expand{
@@ -400,7 +404,6 @@ footer{
 
     display: flex;
     height: auto;
-    column-gap: 50px;
 }
 
 footer a {
@@ -410,7 +413,7 @@ footer a {
 .footer-nav-container{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+
 }
 .footer-nav-links {
     display: flex;
@@ -421,13 +424,7 @@ footer a {
 .footer-contact-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 
-.footer-contact-links{
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0px 5px 5px;
-}
 
 /* media queries here to only display icons with links */
