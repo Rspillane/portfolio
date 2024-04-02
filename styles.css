@@ -218,12 +218,30 @@ h3 {
     row-gap: 20px;
     column-gap: 30px;*/
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 25px;
 }
-
-/* Add in some media queries here */
+/* MEDIA QUERIES */
+/* Media query for phones (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .portfolio-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* Media query for tablets (601px to 1024px) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .portfolio-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Media query for desktops (1025px and above) */
+  @media only screen and (min-width: 1025px) {
+    .portfolio-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
 .portfolio-card {
     display: flex;
@@ -330,21 +348,36 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+    margin: 100px;
 }
 
 
 .skills-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
     width: 100%;
     justify-content: center;
-    align-items: flex-start;
 }
 
+
+/* MEDIA QUERIES */
+/* Media query for phones (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .skills-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 75px;
+    }
+  }
+  
+  /* Media query for tablets (601px to 1024px) */
+  @media only screen and (min-width: 601px) {
+    .skills-container{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+  }
+
 .skill-col{
-    width: 150px;
-    padding-inline: 50px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
