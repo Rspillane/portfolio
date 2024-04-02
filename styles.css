@@ -87,14 +87,12 @@ h3 {
 
     display: flex;
     align-items: center;
-
-    margin-bottom: 100px;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    margin-left: 100px;
     min-width: 350px;
     max-width: 40%;
     font-weight: 200;
@@ -102,40 +100,56 @@ h3 {
 
 .hero-image-section {
     min-width: 300px;
+    height: 100%;
     width: 50%;
     display: flex;
     flex-direction: row;
-
     position: relative;
+    z-index: 0;
+
 }
 
-/* Media query to change hero to column */
+/* Media query for phones (up to 1000px) */
+@media only screen and (max-width: 1000px) {
+    #hero{
+        flex-direction: column;
+        margin-top: 130px;
+        margin-bottom: 75px;
+        height: 600px;
+    }
+
+    .hero-image-section{
+        transform: translate(75px, 0px);
+    }
+}
+
+  
+  #hero-image-1,
+  #hero-image-2,
+  #hero-image-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+  }
 
 .hero-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
     border-radius: 30px;
 
     cursor: pointer;
     transition: all 0.5s;
 }
 
-#hero-image-1{
-    margin: -170px 0 0 -80px;
+#hero-image-1 {
+    rotate: 2deg;
+}
 
+#hero-image-2 {
     rotate: 5deg;
 }
 
-#hero-image-2{
-    margin: -120px 0 0 -200px;
-
-    rotate: -10deg;
-}
-
-#hero-image-3{
-    margin: -150px 0 0 -120px;
+#hero-image-3 {
+    rotate: -2deg;
 }
 
 .hero-image:hover{
@@ -145,7 +159,7 @@ h3 {
 
 .hero-image:active{
     transform: translate(10px, 5px);
-    opacity: 0.5;
+    opacity: 0.8;
     transition: all 0.3s;
 }
 
@@ -153,31 +167,31 @@ h3 {
 #bio {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 100px;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-inline: 100px;
 }
 
 .bio-text{
     display: flex;
-    padding-left: 100px;
-    padding-right: 50px;
     font-weight: 200;
     min-width: 250px;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 .bio-tags-container {
-    padding-right: 100px;
-    padding-left: 50px;
-    flex-wrap: wrap;
+    min-width: 150px;
+    max-width: 500px;
 
 }
 
 .bio-tags {
     display: flex;
     flex-wrap: wrap;
-    min-width: 250px;
-    max-width: 500px;
+
 }
 
 .bio-tag {
