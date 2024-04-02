@@ -211,13 +211,19 @@ h3 {
 }
 
 .portfolio-cards {
-    display: flex;
+    /* display: flex;
     width: 100%;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     row-gap: 20px;
-    column-gap: 30px;
+    column-gap: 30px;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
 }
+
+/* Add in some media queries here */
 
 .portfolio-card {
     display: flex;
@@ -238,7 +244,7 @@ h3 {
 
 .portfolio-card:hover{
     scale: 1.01;
-    margin: 5px;
+    margin: 0px;
     box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
     /* padding-inline: 50px; */
     transition: all .5s;
