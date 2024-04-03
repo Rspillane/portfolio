@@ -159,7 +159,14 @@ h3 {
     opacity: 0.8;
     transition: all 0.3s;
 }
-
+/* wobble animation for hero images */
+@keyframes wobble {
+    0% { transform: rotate(0deg) translate(-50%, -50%);}
+    25% { transform: rotate(1deg) translate(-50%, -50%);}
+    50% { transform: rotate(-2deg) translate(-50%, -50%); }
+    75% { transform: rotate(1deg) translate(-50%, -50%);}
+    100% { transform: rotate(0deg) translate(-50%, -50%); }
+}
 
 /* Bio Section */
 #bio {
@@ -270,7 +277,6 @@ h3 {
     scale: 1.01;
     margin: 0px;
     box-shadow: rgba(0, 0, 0, 0.674) 0px 5px 15px;
-    /* padding-inline: 50px; */
     transition: all .5s;
 }
 
@@ -484,6 +490,3 @@ footer a {
     justify-content: space-evenly;
     width: 50%;
 }
-
-
-/* media queries here to only display icons with links */
