@@ -69,7 +69,7 @@ const projects = [
         I have tried to style the website in a way where the frontend features are subtle and clean. Hopefully meaning they do not distract from the main information the website is built to show. i.e. My portfolio of projects, a bit about me and my technical background.
         
         I personally like the minimalist style of the site and it will also mean it is much easier to add future content or additional pages.`,
-        projectTags: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+        projectTags: ['HTML', 'CSS', 'JavaScript'],
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/portfolio',
         liveDemo: true,
