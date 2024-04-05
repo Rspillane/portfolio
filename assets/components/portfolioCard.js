@@ -11,11 +11,38 @@ const projects = [
         projectTags: ['React', 'Next.js','HTML', 'CSS', 'JavaScript'],
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/MGDB',
+        liveDemo: true,
+        demoLink: 'https://mgdb-jade.vercel.app/',
+    },
+    {
+        id: 2,
+        title: 'Forest Brewery Co.',
+        img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
+        description: `Forest Brewing Company is a fictional craft brewery based in Warwickshire. This ecommerce site was an early attempt at a simpler website built without a front end framework. Therefore this project was built with only HTML, CSS and Javascript.`,
+        more: `My main takeaway for this project was how to build a site with mobile first design in mind. I learnt about media queries in css and other methods to reformat page components in order for them to be easily understood by the user on both mobile and desktop version of the website.
+        Other takeaways included using the appropriate semantic HTML in order for the page to be accessible to as many different types of user as possible.
+        I have deployed the single page website using Github pages.`,
+        projectTags: ['HTML', 'CSS', 'JavaScript'],
+        liveCode: true,
+        githubLink: 'https://github.com/Rspillane/forest-brewing-company',
+        liveDemo: true,
+        demoLink: 'https://rspillane.github.io/forest-brewing-company/',
+    },
+    {
+        id: 3,
+        title: 'Zen Rally',
+        img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
+        description: `Zen Rally is a driving mini-game built using the Unity Game Engine and C#. Realistic vehicle physics and calming snowy environment, encourage the player to to get into the flow state of rally driving. `,
+        more: `My educational background is in Mechanical and Automotive Engineering, so I decided to build a vehicle controller from scratch in Unity using C# to create the vehicle physics equations and apply these forces to the car model. This mini project has helped expose me to the syntax and structure of another language, in this case C#. It has also provided an opportunity to develop software outside of web development.
+        The visuals of the projects are still a work in progress, however most of the vehicle physics have been created. `,
+        projectTags: ['C#'],
+        liveCode: false,
+        githubLink: '',
         liveDemo: false,
         demoLink: '',
     },
     {
-        id: 2,
+        id: 4,
         title: 'Stickr',
         img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
         description: 'Stickr is a small scale ecommerce website, created for a fictional sticker company to advertise and sell their range of stickers of popular classic cars in a cellshaded cartoony art style.',
@@ -33,33 +60,6 @@ const projects = [
         demoLink: '',
     },
     {
-        id: 3,
-        title: 'Forest Brewery Co.',
-        img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
-        description: `Forest Brewing Company is a fictional craft brewery based in Warwickshire. This ecommerce site was an early attempt at a simpler website built without a front end framework. Therefore this project was built with only HTML, CSS and Javascript.`,
-        more: `My main takeaway for this project was how to build a site with mobile first design in mind. I learnt about media queries in css and other methods to reformat page components in order for them to be easily understood by the user on both mobile and desktop version of the website.
-        Other takeaways included using the appropriate semantic HTML in order for the page to be accessible to as many different types of user as possible.
-        I have deployed the single page website using Github pages.`,
-        projectTags: ['HTML', 'CSS', 'JavaScript'],
-        liveCode: true,
-        githubLink: 'https://github.com/Rspillane/forest-brewing-company',
-        liveDemo: true,
-        demoLink: 'https://rspillane.github.io/forest-brewing-company/',
-    },
-    {
-        id: 4,
-        title: 'Zen Rally',
-        img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
-        description: `Zen Rally is a driving mini-game built using the Unity Game Engine and C#. Realistic vehicle physics and calming snowy environment, encourage the player to to get into the flow state of rally driving. `,
-        more: `My educational background is in Mechanical and Automotive Engineering, so I decided to build a vehicle controller from scratch in Unity using C# to create the vehicle physics equations and apply these forces to the car model. This mini project has helped expose me to the syntax and structure of another language, in this case C#. It has also provided an opportunity to develop software outside of web development.
-        The visuals of the projects are still a work in progress, however most of the vehicle physics have been created. `,
-        projectTags: ['C#'],
-        liveCode: true,
-        githubLink: '',
-        liveDemo: false,
-        demoLink: '',
-    },
-    {
         id: 5,
         title: 'My Portfolio Website',
         img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
@@ -73,7 +73,7 @@ const projects = [
         liveCode: true,
         githubLink: 'https://github.com/Rspillane/portfolio',
         liveDemo: true,
-        demoLink: '',
+        demoLink: 'https://rspillane.github.io/portfolio/',
     },
     
 ]
