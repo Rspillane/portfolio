@@ -2,7 +2,7 @@
 const projects = [
     {
         id: 1,
-        title: 'MGBb',
+        title: 'MGDb',
         img: 'https://private-user-images.githubusercontent.com/41272270/273391163-67aad3ab-3dff-4b43-81ab-f3b09cd2b394.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1NjQ2NzYsIm5iZiI6MTcwNjU2NDM3NiwicGF0aCI6Ii80MTI3MjI3MC8yNzMzOTExNjMtNjdhYWQzYWItM2RmZi00YjQzLTgxYWItZjNiMDljZDJiMzk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDIxMzkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4YWE2NWI5NmE1NDk2ZGMyYmRlMTQ5MjAzMTg1MjkwYWNkM2U4MzlhYTdiNzU3MzY5ZDcyNmFkNjhlMDA5NGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DFdQRPJYKEtE8_F_dooSRWRRRW_wQJiGEru5k-xlfqA',
         description: `This was my first foray into React/ Next.js and also into utilising APIs. My Video Game Database (MGDb), is a IMDb"-esque" web-app but specifically for video games.`,
         more: `The apps includes features such as, search, filter and sort games from the API's lists as well as the ability to select games to view more details, for example: release date, platform(s), a short description and cover images. The app currently gets data from REST API supported by Twitch. The data sorting and filtering is done on the client side / front end. I want to move the data onto my own database and make the client GET this data from my own database, depending on the user's form input selection.
